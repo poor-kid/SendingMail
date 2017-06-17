@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+
+    android:scrollbarStyle="insideInset"
+    android:scrollbars="vertical"
+    tools:context="com.example.dil.sendmail.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/relay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="61dp"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText5"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            android:onClick="send"
+            android:text="Send" />
+
+        <EditText
+            android:id="@+id/editText4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/editText"
+            android:layout_below="@+id/editText"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:hint="sub:"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editText5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/editText4"
+            android:layout_below="@+id/editText4"
+            android:layout_marginTop="45dp"
+            android:ems="10"
+            android:hint="body"
+            android:inputType="textMultiLine" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/editText5"
+            android:layout_below="@+id/button"
+            android:layout_marginTop="26dp"
+            android:ems="10"
+            android:hint="Username"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/editText2"
+            android:layout_below="@+id/editText2"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+
+            android:layout_alignStart="@+id/button"
+            android:layout_marginBottom="41dp"
+            android:layout_marginStart="6dp"
+            android:onClick="login"
+            android:text="login" />
+    </RelativeLayout>
+
+</ScrollView>
+
